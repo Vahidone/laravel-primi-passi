@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    $message = 'Questa è la mia HOMEPAGE';
+    $text = 'Questa è la mia HOMEPAGE';
     $links = [
         '',
         'news',
@@ -20,7 +20,7 @@ Route::get('/', function () {
         'ARTE',
         'SU DI NOI'
     ];
-    return view('home', compact('message', 'links', 'titles'));
+    return view('home', compact('text', 'links', 'titles'));
 });
 
 
