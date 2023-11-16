@@ -13,14 +13,20 @@ Route::get('/', function () {
 
 
 Route::get('/news', function () {
+    $test = 'ciao news';
+    return view('news', compact('test'));
 
 });
 
 Route::get('/sport', function () {
+    $test = 'ciao sport';
+    return view('sport', compact('test'));
 
 });
 
 Route::get('/art', function () {
+    $test = 'ciao art';
+    return view('art', compact('test'));
 
 });
 

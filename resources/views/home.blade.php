@@ -11,18 +11,17 @@
     <title>Laravel Primi Passi</title>
 </head>
 <body>
-    <div class="container my-5 p-5">
-        <h1 class="text-success">{{ $name}} {{ $lastname }}</h1>
 
-        @if($flag)
-            <p class="text-primary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti debitis doloribus incidunt eaque, saepe laudantium reprehenderit fuga voluptates ratione porro quo neque animi, dolorum fugiat ad placeat iste. Dolores, sunt.</p>
-        @else
-
-        <p>Devi scrivere qualcosa</p>
-
-    @endif
-
-    </div>
+    <header class="bg-success d-flex justify-content-center align-items-center py-4 ">
+        <nav class="nav fs-1">
+            <a class="nav-link text-white active" aria-current="page" href="">Home</a>
+            <a class="nav-link text-white" href="news">News</a>
+            <a class="nav-link text-white" href="sport">Sport</a>
+            <a class="nav-link text-white" href="art">Art</a>
+            <a class="nav-link text-white" href="about">About</a>
+        </nav>
+    </header>
+    <h1> ciao {{ $name}} {{ $lastname}}</h1>
 
 </body>
 </html>
