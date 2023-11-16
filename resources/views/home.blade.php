@@ -14,8 +14,8 @@
 
     <header class="bg-success d-flex justify-content-center align-items-center py-4 ">
         <nav class="nav fs-1">
-            @foreach($pages as $page)
-            <a class="nav-link text-white active" aria-current="page" href="{{ $page }}">{{ $page }}</a>
+            @foreach($links as $index => $link)
+            <a class="nav-link text-white active" aria-current="page" href="{{ url($link) }}">{{ $titles[$index] }}</a>
             @endforeach
 
         </nav>

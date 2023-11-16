@@ -6,14 +6,21 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $message = 'Questo è il mio HOME';
-    $pages = [
+    $links = [
         'home',
         'news',
         'sport',
         'art',
         'about'
     ];
-    return view('home', compact('message', 'pages'));
+    $titles = [
+        'HOME',
+        'NOTIZIE',
+        'SPORT',
+        'ARTE',
+        'SU DI NOI'
+    ];
+    return view('home', compact('message', 'links', 'titles'));
 });
 
 
