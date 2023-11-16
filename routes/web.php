@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    $message = 'Questo è il mio HOME';
+    $message = 'Questa è la mia HOMEPAGE';
     $links = [
         '',
         'news',
