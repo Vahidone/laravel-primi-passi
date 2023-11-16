@@ -11,6 +11,9 @@
     <title>Laravel Primi Passi</title>
 </head>
 <body>
-    <h1>{{ $test }}</h1>
+    <div class="container text-center mt-5 pt-5">
+        <h1 class="text-black fw-bold ">{{ $text }}</h1>
+    </div>
+
 </body>
 </html>

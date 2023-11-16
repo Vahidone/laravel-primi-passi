@@ -21,7 +21,14 @@
             <a class="nav-link text-white" href="about">About</a>
         </nav>
     </header>
-    <h1> ciao {{ $name}} {{ $lastname}}</h1>
+    <main>
+        <div class="container text-center mt-5 pt-5">
+
+          <h1 class="text-danger fw-bold">{{ $message }}</h1>
+
+        </div>
+    </main>
+
 
 </body>
 </html>

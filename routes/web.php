@@ -5,35 +5,33 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    $name = 'Ugo';
-    $lastname = 'De Ughi';
-    $flag = true;
-    return view('home', compact('name', 'lastname', 'flag'));
+    $message = 'Questo è il mio HOME';
+    return view('home', compact('message'));
 });
 
 
 Route::get('/news', function () {
-    $test = 'ciao news';
-    return view('news', compact('test'));
+    $text = 'Questa è la mia pagina News';
+    return view('news', compact('text'));
 
 });
 
 Route::get('/sport', function () {
-    $test = 'ciao sport';
-    return view('sport', compact('test'));
+    $text = 'Questa è la mia pagina Sport';
+    return view('sport', compact('text'));
 
 });
 
 Route::get('/art', function () {
-    $test = 'ciao art';
-    return view('art', compact('test'));
+    $text = 'Questa è la mia pagina Art';
+    return view('art', compact('text'));
 
 });
 
 Route::get('/about', function () {
 
-    $test = 'ciao about';
-    return view('about', compact('test'));
+    $text = 'Questa è la mia pagina About';
+    return view('about', compact('text'));
 
 });
 
