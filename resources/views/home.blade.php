@@ -15,7 +15,7 @@
     <header class="bg-success d-flex justify-content-center align-items-center py-4 ">
         <nav class="nav fs-1">
             @foreach($links as $index => $link)
-            <a class="nav-link text-white active" aria-current="page" href="{{ url($link) }}">{{ $titles[$index] }}</a>
+            <a class="nav-link text-white active ms-5 " aria-current="page" href="{{ url($link) }}">{{ $titles[$index] }}</a>
             @endforeach
 
         </nav>
