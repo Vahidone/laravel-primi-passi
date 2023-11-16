@@ -14,11 +14,10 @@
 
     <header class="bg-success d-flex justify-content-center align-items-center py-4 ">
         <nav class="nav fs-1">
-            <a class="nav-link text-white active" aria-current="page" href="">Home</a>
-            <a class="nav-link text-white" href="news">News</a>
-            <a class="nav-link text-white" href="sport">Sport</a>
-            <a class="nav-link text-white" href="art">Art</a>
-            <a class="nav-link text-white" href="about">About</a>
+            @foreach($pages as $page)
+            <a class="nav-link text-white active" aria-current="page" href="{{ $page }}">{{ $page }}</a>
+            @endforeach
+
         </nav>
     </header>
     <main>
