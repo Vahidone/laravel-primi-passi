@@ -11,6 +11,6 @@
     <title>Laravel Primi Passi</title>
 </head>
 <body>
-    <h1>ciaone</h1>
+    <h1>{{ $test }}</h1>
 </body>
 </html>
